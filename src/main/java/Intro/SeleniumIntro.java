@@ -13,10 +13,27 @@ import java.util.*;
 public class SeleniumIntro {
     
     public static void main(String[] args){
+        /**
+         * Maven is a build tool used for documentation and project management.
+         * We do not have to download and configure Selenium, instead, we just put it into our pom.xml file
+         * Then, Maven will import, download and configure those external dependencies for us
+         */
+
+        /**
+         * Selenium is a tool that is used for automation. Little demo below.
+         * We can use it to navigate browsers, check test cases etc.
+         */
         System.out.println("Selenium Projects!");
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.facebook.com/mew.liwrungsub");
+        driver.get("https://www.github.com/norralak");
+        //Another way to navigate
+        driver.navigate().to("https://www.instagram.com/nor.ralak");
+        driver.navigate().back();
+        System.out.println("YOU ARE NOW HERE: "+driver.getTitle());
+        driver.manage().window().maximize();
+        driver.close();
+        System.out.println("Browser Closed");
     }
 
 }
