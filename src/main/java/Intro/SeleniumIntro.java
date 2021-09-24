@@ -32,8 +32,8 @@ public class SeleniumIntro {
         driver.navigate().back();
         System.out.println("YOU ARE NOW HERE: "+driver.getTitle());
         driver.manage().window().maximize();
-        driver.close();
-        System.out.println("Browser Closed");
+        driver.get("https://www.youtube.com/watch?v=jt9LlHXGckg");
+        System.out.println(driver.getTitle());
     }
 
 }
