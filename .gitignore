@@ -7,7 +7,7 @@ out/
 .DS_Store
 test-output/
 *.iml
-.idea/
+idea/
 doc/
 *.zip
 *-results.xml
